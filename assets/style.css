@@ -4,8 +4,19 @@
 *{
   margin: 0;
   padding:0;
+  box-sizing: border-box;
 }
 /* --------- NAV BAR --------- */
+
+.nav-bar{
+  background-color: white;
+/*   box-shadow: 0px 0px 10px 0px  #000000; */
+  transition: ease-in 0.3s;
+}
+.na-bar::-webkit-scrollbar{
+  box-shadow: 0px 2px 1px 1px  #000000;
+}
+
 .li-nav{
   list-style-type: none;
   display:flex;
