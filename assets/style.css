@@ -4,18 +4,75 @@
 *{
   margin: 0;
   padding:0;
-  box-sizing: border-box;
+
 }
 /* --------- NAV BAR --------- */
 
 .nav-bar{
   background-color: white;
-/*   box-shadow: 0px 0px 10px 0px  #000000; */
+  -webkit-transition: ease-in 0.3s;;
   transition: ease-in 0.3s;
+  display:block
+   
 }
-.na-bar::-webkit-scrollbar{
-  box-shadow: 0px 2px 1px 1px  #000000;
+
+/* ------------------------------------------ */
+@media (max-width:1080px) {
+  .nav-bar{
+    display: none;
+
+  }
 }
+@media (min-width:1079px) {
+  .topnav{
+    display: none;
+  }
+}
+.topnav {
+  overflow: hidden;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+}
+
+.topnav a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: white;
+  display: block;
+}
+
+.topnav a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+
+
+/* .----------------------------------------------- */
+/* 
+#hamburguer-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: black;
+}
+@media(min-width:768px){
+ .hamburguer-menu{
+  display:block;
+ } 
+} */
 
 .li-nav{
   list-style-type: none;
@@ -54,25 +111,26 @@
   font-family:'Roboto Slab', serif;
 }
 
-.title-type{
-  width: 23ch;
-  animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid;
-  font-family: monospace;
-  font-size: 2em;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
+@media (min-width:1080px) {
+  .title-type{
+    width: 23ch;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
   }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
   }
 }
 
