@@ -17,6 +17,7 @@
 }
 
 /* ------------------------------------------ */
+
 @media (max-width:1080px) {
   .nav-bar{
     display: none;
@@ -54,25 +55,6 @@
 
 
 /* .----------------------------------------------- */
-/* 
-#hamburguer-menu {
-  display: none;
-  cursor: pointer;
-}
-
-.bar{
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: black;
-}
-@media(min-width:768px){
- .hamburguer-menu{
-  display:block;
- } 
-} */
 
 .li-nav{
   list-style-type: none;
@@ -151,11 +133,17 @@ a .nav-link{
   padding: 10px 50px;
   border-radius: 15px;
   box-shadow: 0px 2px 1px 1px  #000000;
-  transition: ease-in-out;
+  transition: ease-in-out 0.1s;
 }
 .button:hover{
   background-color: #3a55c2;
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 2px 2px  #000000;
   color: white;
+}
+.button:active{
+  transform: translateY(2px);
+  box-shadow: 0px 3px 2px 2px  #000000;
 }
 .responsive {
   width: 50%;
@@ -177,10 +165,16 @@ a .nav-link{
   border-radius: 20px;
   box-shadow: -2px 2px 3px 1px #000000;
   transition: ease-in-out;
+  
 }
 .button1:hover{
   background-color: #f0e65a;
   color: black;
+  transform: translateY(-2px);
+}
+.button1:active{
+transform: translateY(1px);
+box-shadow: -2px 2px 3px 1px #000000;
 }
 
 .button2{
@@ -196,7 +190,13 @@ a .nav-link{
 .button2:hover{
   background-color:#60d697;
   color: black;
+  transform: translateY(-2px);
 }
+.button2:active{
+  transform: translateY(1px);
+  box-shadow: 2px 2px 3px 1px  #000000;
+}
+
 .button3{
   background-color: #f1b280;
 font-weight: bold;
@@ -204,13 +204,18 @@ font-weight: bold;
   border: 1px solid;
   padding: 10px 50px;
   border-radius: 20px;
-  box-shadow:2px 2px 3px 1px  #000000;
+  box-shadow: -2px 2px 3px 1px  #000000;
   transition: ease-in-out;
 }
 .button3:hover{
   background-color: #d69f72;
   color: black;
+  transform: translateY(-2px);
 }
+.button3:active{
+  transform: translateY(1px);
+  box-shadow: -2px 2px 3px 1px #000000;
+  }
 
 /*------------------ FOOTER ------------------*/
 .responsive2{
