@@ -1,9 +1,10 @@
-<div id="backdroop"></div>
-<div class="container sticky-top nav-bar" id="nav-bar">
-  <div class="row">
-    <div class="col-md-5">
-      <ul class="li-nav">
-        <li><a class="nav-link active" href="#"><img src="assets/image/ecwidBlack.svg" alt="" width="120px"></a></li>
+<!-- onclick="location.href='serviços.php'" -->
+
+<div class="container sticky-top nav-bar">
+  <div class="row nav-row">
+    <div class="col-md-5"align="left">
+      <ul class="li-nav" >
+        <li class="image"><a class="nav-link active" href="#"><img src="assets/image/ecwidBlack.svg" alt="" width="120px"></a></li>
         <li><a href="#" class="a-nav">Sell</a></li>
         <li><a href="#" class="a-nav">Market</a></li>
         <li><a href="#" class="a-nav">Manage</a></li>
@@ -15,8 +16,11 @@
         <li><a href="#" class="a-nav">Partners</a></li>
         <li><a href="#" class="a-nav">Pricing</a></li>
         <li><a href="#" class="a-nav">Login</a></li>
-        <li><a href="#" class="a-nav FREE"><font color="white">Get started for FREE</font></a></li>
+        <li><a href="login.php" class="a-nav FREE"><font color="white">Get started for FREE</font></a></li>
       </ul>
+      <span>
+  
+      </span>
     </div>
   </div>
 </div>
