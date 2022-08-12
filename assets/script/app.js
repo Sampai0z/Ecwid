@@ -1,22 +1,33 @@
-const hamb = document.getElementById('hamburguer');
+const hamb = document.querySelector('.fa');
+const menu_button = document.querySelector('#hamburguer');
 const backdrop = document.getElementById("backdrop");
 
-function myFunction() {
-  let x = document.getElementById("myLinks");
+function active_bar() {
+  let tab_menu = document.getElementById("myLinks");
 
-  if (x.style.display === "block") {
-    x.style.display = "none";
+  if (tab_menu.style.display === "block") {
+    tab_menu.style.display = "none";
+    menu_button.classList.remove('menu-open');
   } else {
-    x.style.display = "block";
+    tab_menu.style.display = "block";
+    menu_button.classList.add('menu-open');
   }
 }
-const toggleBackdrop = () => {
-  backdrop.classList.toggle('none');
-  return
+
+/* .btn-close:hover:before::after{
+  content: '\f00d';
+} */
+
+const oX = () => {
+  if(hamb.className == "new"){
+    hamb.className = "bar"
+  }else{
+    hamb.className = "new"
+  }
 };
+
 const menuTab = () => {
-  // toggleBackdrop()
-  myFunction();
+  active_bar();
 }
 
 hamb.addEventListener('click', menuTab);

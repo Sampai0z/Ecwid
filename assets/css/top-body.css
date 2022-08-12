@@ -103,4 +103,8 @@
   .topnav {
     display: none;
   }
-};
+}
+
+a#hamburguer.menu-open i:before {
+  content: '\f00d';
+}
