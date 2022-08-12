@@ -70,7 +70,7 @@
   </div>
 </div>
   
-<!-- PRIMEIRA PARTE -->
+<!-- FIRST PART -->
 
 <div class="container mt-4 pt-5" align="center">
   <div class="row g-0">
@@ -110,7 +110,7 @@
   <hr>
 </div>  
 
-<!-- SEGUNDA PARTE -->
+<!-- SECOND PART -->
 
 <div class="clearfix mb-5 pt-3"></div>
 
@@ -154,7 +154,7 @@
   <hr>
 </div> 
 
-<!-- TERCEIRA PARTE -->
+<!-- THIRD PART -->
 
 <div class="clearfix mt-4 pt-3"></div>
 

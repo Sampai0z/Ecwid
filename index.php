@@ -6,8 +6,8 @@
 
 <body>
     <?php 
-        include_once("php/topo.php");
-        include_once("php/inicial.php");
+        include_once("php/top-body.php");
+        include_once("php/body.php");
         include_once("php/footer.php"); 
     ?>
 </body>
