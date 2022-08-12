@@ -1,6 +1,6 @@
 .nav-bar{
   background-color: white;
-  -webkit-transition: ease-in 0.3s;;
+  -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
   display:block;
   box-shadow: 0px 1px 2px -2px  #000000;  
@@ -41,13 +41,30 @@
 }
 
 /* -------------------- RESPONSIVE NAV-BAR ---------------------- */
+.ul-top{
+  background-color: rgb(255, 255, 255);
+  list-style-type: none;
+  align-items: flex-end;
+  justify-content: end;
+  
+  align-content: flex-end;
+  align-self: flex-end;
+}
+
+.free-nav-font{
+ 
+  background-color: #000000;
+  font-weight: 500;
+  padding: 6px 10px 6px 10px;
+  border-radius: 3px;
+  display: inline-block;
+}
 
 .topnav {
   overflow: hidden;
-  background-color: rgb(0, 0, 0);
   position: relative;
   margin-top: 20px;
-  box-shadow: 0px 1px 2px -2px  #000000;    
+  box-shadow: 0px 0px 2px -2px  #000000;      
 }
 
 .topnav a {
@@ -69,6 +86,12 @@
 }
 .topnav #myLinks {
   display: none;
+  justify-content: end;
+
+}
+#myLinks{
+  align-items: flex-end;
+  justify-content: end;
 }
 @media (max-width:1200px) {
   .nav-bar{
